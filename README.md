@@ -1,2 +1,5 @@
 # PipeValidate
 Validate implementation of PipeBase. Overrides the default Option implementation (see: https://github.com/BartBierbooms/Descriptive-.NET) for default piping.
+
+You can write overwrite the default Option base implementation of the piping. 
+As an example I have added a Validator implementation through a validation class. In stead of an Option, a Validation is returned, which combines validation results or exceptions and a real object representing the business result of a successful pipe execution. This perfectly fits with a Web service situation, where you want to validate your input and execute some logic, but you don't want Exceptions to bubble up to the caller in their original form. Validation errors have a direct impact on the returned response. There can be multiple sources that can return validation results. For the Validation i have added Join and JoinIfValid, which internally are Then-implementations. Join and JoinIfValid specify in a better way the purpose of a Validate pipeline.
