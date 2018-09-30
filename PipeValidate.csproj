@@ -4,10 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>Validate implementation of PipeBase. Overrides the default Option implementation (see: https://github.com/BartBierbooms/Descriptive-.NET) for default piping.</Description>
     <Copyright>Bart Bierbooms 2018</Copyright>
-    <PackageTags>Functional programming Fluent interface</PackageTags>
+    <PackageTags>Functional programming Fluent interface Piping</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Bart Bierbooms</Authors>
     <PackageReleaseNotes>The default piping implementation outputs an Option object as a pipeline  (segment) result. The validator class overidies this behavior.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/BartBierbooms/PipeValidate</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
